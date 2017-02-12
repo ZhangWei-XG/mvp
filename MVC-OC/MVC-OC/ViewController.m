@@ -21,6 +21,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     _presenter = [[LoginPresenter alloc]init];
     [_presenter attachView:self];
+    
+    //  模拟直接发送登录请求
     [_presenter login:@"zw" pwd:@"123456"];
 }
 
